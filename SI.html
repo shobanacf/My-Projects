@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Simple Interest</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function simple()
+{
+p=document.getElementById("p").value;
+n=document.getElementById("n").value;
+r=document.getElementById("r").value;
+si=document.getElementById("si");
+si.innerHTML="The Calculated Simple Interest is" + " " + (p*n*r)/100;
+
+}
+</script>
+<div class="container-fluid">
+<div class="panel panel-heading">
+  <h1>Find Simple Interest</h1>
+ </div>
+  
+  <div class="row">
+   <div class="col-sm-6" style=";">
+ <strong>Principle:</strong> <input class="input-sm" id="p">
+  </br></br>
+ <strong>Interest:</strong>  <input class="input-sm"id="r">
+  </br></br>
+ <strong>Time:</strong>      <input class="input-sm"id="n">
+  </br></br>
+ <input type="button" value="calculate" onclick="simple()">
+</div>
+
+
+<div class="col-sm-6">
+ <div class="well well-sm">
+
+<p id="si">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
